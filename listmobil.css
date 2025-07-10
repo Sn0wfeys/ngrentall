@@ -49,6 +49,11 @@ body {
   color: #106ebe;
 }
 
+.section-title {
+  color: #106EBE;
+  font-weight: bold;
+}
+
 .custom-btn {
   background-color: #106ebe;
   color: #ffffff;
