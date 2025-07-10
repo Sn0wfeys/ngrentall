@@ -1,0 +1,21 @@
+.button {
+  color: #106ebe;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  background-color: #106ebe;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #0c4678;
+}

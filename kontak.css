@@ -1,0 +1,42 @@
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navbar {
+  margin-right: 14px;
+}
+
+.dropdown-menu {
+  background-color: #106ebe;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #0c4678;
+}
+
+body {
+  background-color: #106ebe;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.highlight {
+  color: #0ffcbe;
+  font-weight: bold;
+}
+
+.keluarga-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keluarga {
+  max-width: 100%;
+  height: auto;
+  margin-left: 150px;
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pemesanan.css">
+</head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--Navbar-->
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top" style="background-color: #106EBE;">
+        <div class="container">
+            <img src="img/logo.png" alt="logo" width="100" height="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline d-flex flex-row gap-3 ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                <a class="nav-link text-white" href="listmobil.html">List Mobil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Informasi</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-white" href="kontak.html">Kontak</a></li>
+                  <li><a class="dropdown-item text-white" href="tentangkami.html">Tentang Kami</a></li>
+                </ul>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+<!--Form Pemesanan-->
+<main>
+<div class="container my-5">
+<div class="container-fluid d-flex justify-content-center align-items-start min-vh-100 pt-5">
+          <div class="col-md-8 order-2 order-md-1" style="margin-top: 100px;">
+            <h4 class="mb-3">Formulir Pemesanan</h4>
+            <form class="needs-validation was-validated" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3 ">
+                  <label>Nama depan</label>
+                  <input type="text" class="form-control" required>
+                  <div class="invalid-feedback">Nama depan harus diisi.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label>Nama belakang</label>
+                  <input type="text" class="form-control" required>
+                  <div class="invalid-feedback">Nama belakang harus diisi.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label>Email</label>
+                <input type="email" class="form-control" required>
+                <div class="invalid-feedback">Email harus diisi.</div>
+              </div>
+
+              <div class="mb-3">
+                <label>Alamat</label>
+                <input type="text" class="form-control" required>
+                <div class="invalid-feedback">Alamat harus diisi.</div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label>Provinsi</label>
+                  <select class="form-select" required>   
+                    <option value="">Pilih...</option>
+                    <option>DIY Yogyakarta</option>
+                  </select>
+                  <div class="invalid-feedback">Pilih kota/kabupaten yang sesuai.</div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label>Kota/Kabupaten</label>
+                  <select class="form-select" required>
+                    <option value="">Pilih...</option>
+                    <option>Seturan</option>
+                    <option>Condongcatur</option>
+                    <option>Babarsari</option>
+                    <option>Demangan</option>
+                  </select>
+                  <div class="invalid-feedback">Pilih provinsi yang sesuai.</div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label>Kode Pos</label>
+                  <input type="text" class="form-control" required>
+                  <div class="invalid-feedback">Kode pos harus diisi.</div>
+                </div>
+              </div>
+              
+                <div class="mb-3">
+                 <label for="formFile" class="form-label">Upload KTP</label>
+                 <input class="form-control" type="file" id="formFile">
+                 <div class="invalid-feedback">Upload KTP diwajibkan.</div>
+             </div>
+
+                <div class="mb-3">
+                 <label for="formFile" class="form-label">Upload SIM</label>
+                 <input class="form-control" type="file" id="formFile">
+                 <div class="invalid-feedback">Upload SIM diwajibkan.</div>
+             </div>
+
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Simpan informasi ini untuk selanjutnya.</label>
+              </div>
+
+              <hr class="my-4">
+              <h4 class="mb-3">Pembayaran</h4>
+
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="dedit">BCA</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Mandiri</label>
+              </div>
+              <div class="form-check mb-3">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+              <button class="btn btn-lg w-100" style="background-color: #106EBE; color: white;" type="submit">Proses pembayaran</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<script src="pemesanan.js"></script>
+</body>
+</html>

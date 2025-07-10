@@ -1,0 +1,116 @@
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  background-color: #106ebe;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #0c4678;
+}
+
+body {
+  background-color: #106ebe;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.highlight {
+  color: #0ffcbe;
+  font-weight: bold;
+}
+
+.custom-btn {
+  background-color: #0ffcbe;
+  color: #106ebe;
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
+.custom-btn:hover {
+  background-color: #0db387;
+  color: #0c4e87;
+}
+
+.full-white-section {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  background-color: white;
+  color: #106ebe;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.awal-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orangnunjuk {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.custom-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer img {
+  margin-left: 200px;
+  margin-top: 40px;
+}
+
+.fa-instagram {
+  font-size: 45px;
+  color: #0ffcbe;
+}
+
+.fa-tiktok {
+  font-size: 40px;
+  color: #0ffcbe;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.fa-tiktok:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.fa-x-twitter {
+  font-size: 40px;
+  color: #0ffcbe;
+}
+
+.fa-x-twitter:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.fa-linkedin {
+  font-size: 40px;
+  color: #0ffcbe;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
